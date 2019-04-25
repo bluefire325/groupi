@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body style="background-color: rgba(102,0,102,48);">
+	<div class="form" style="">
+	    <form method="post">
+		  {% csrf_token %}	
+		  {{ form.as_p }}
+		<div>
+	    <button type="submit" class="btn btn-danger btn-primary btn-sm">Login</button>
+	    <br>
+	    <br>
+	    <div>
+	    	<a href="{% url 'signup' %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true">Register</a>	
+	    </div>
+	    <br>
+	    <div>
+	    	<button type="button" class="btn btn-primary btn-primary btn-sm" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModalLong">Terms and Condition</button>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Terms and Condition  </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                        Mo agrreee baka nga  gwapo kaayu si john clyde dagpnin.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+	    	
+
+	    </div>
+        </form>	
+	 </div>
+</body>
+
+			
+	
+
+{% endblock %}

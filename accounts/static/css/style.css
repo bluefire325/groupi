@@ -1,0 +1,169 @@
+body {
+
+}
+
+h1{
+  color: black;
+  font-size: 50px;
+  margin-left: 10px;
+
+
+
+}
+
+.log{
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  color: black;
+  left: 651px ;
+}
+
+.title{
+  background-color:rgba(146, 166, 211, .5);
+  height: 75px;
+  opacity: .9;
+}
+
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #C2CCF1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  opacity:10;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.1s;
+
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+.form{
+
+
+  position: absolute;
+    left: 500px;  
+  background-color: rgb(122,177,245);
+  border-radius: 15px 15px ;
+
+}
+#menu{
+ left: 1290px;
+ top:7px;
+  position: absolute;
+  background-color: #C2CCF1;
+  margin: : 10px;
+
+}
+
+.div2{
+  background: rgba(140, 200, 255, 0.32);
+  height: 450px;
+  width: 500px;
+  border-radius: 50px 50px;
+  position: absolute;
+  
+  
+}
+
+label{
+  font-size: 15px;
+
+}
+
+
+input{
+  height: 32px;
+  width: 200px;
+}
+
+.blogin{
+  position: absolute;
+  background-color: rgb(191,117,219);
+  height: 30px;
+  width:200px;
+  top:124px;
+}
+
+.p{
+  position: absolute;
+  left: 600px;
+  top: 380px;
+  font-size: 15px;
+  color: black;
+}
+
+.red{
+  color:red;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(146, 166, 211,.4 );
+
+} 
+
+#fa{
+  color: black;
+  position: absolute;
+  bottom: 15px;
+  left: 90px;
+}
+
+.fa{
+  color: black;
+  position: absolute;
+  bottom: 15px;
+  left: 150px;
+}
+
+.fa:hover{
+  color:black;
+}
+
+.faa{
+  color: black;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  font-size: 40px;
+}
+
+#bsubmit {
+  color: black;
+  position: absolute;
+  left:125px;
+  bottom: -40px;
+  font-size: 15px;
+}
