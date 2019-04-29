@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
-{% block title %}Home{% endblock %}
+
+	{% block title %}Home{% endblock %}
+
 
 {% block content %}
 {% if user.is_authenticated %}
@@ -8,11 +10,103 @@
 <p><a href="{% url 'logout' %}">logout</a></p>
 {% else %}
   <div>
-	
-	 <center></center><button><a href="{% url 'login' %}">login</a></button>
-  <button><a href="{% url 'signup' %}">signup</a></button>
-  
 
+
+
+	<style>
+		a{
+			color: white;
+		}
+		a:hover{
+			text-decoration: none;
+			color: white;
+		}
+
+
+		.login-form{
+			position: absolute;
+			margin-top: 60px;
+			box-shadow: 0px 0px 10px 1px grey;
+			border-radius: 5px;
+			padding-bottom: 112px;
+			margin-left: 100px;
+		}
+
+		#div2{
+ 			margin-left: 600px;
+ 		}
+
+		#title{
+			color: black;
+			font-family: lemonada;
+			font-size: 80px;
+			text-align: center;	
+		}
+
+		.title{
+			background-color: rgb(0,122,223);
+			text-align: center;
+			padding:20px;
+			margin:0px;
+			margin-left: -15px;
+			margin-right: -15px;
+			border-radius: 5px 5px 0px 0px;
+			color: black;
+			font-family: sans-serif;
+			font-size:40px;
+ 		}
+
+
+ 		.btn{
+ 			
+ 			font-size: 20px;
+ 			height: 50px;
+    		width: 320px;
+ 			margin-left: 38px;
+ 			
+ 		}
+
+ 		.btn2{
+ 			
+ 			font-size: 20px;
+ 			left: 100px;
+ 			top:300px;
+ 		}
+
+ 		.form{
+		 	margin-left: -484px;
+		    margin-top: 0px;
+		    background-color: white;
+}
+ 		
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="login-form col-md-4 offset-md-4" >
+			<h1 class="title">Coordinator</h1>
+
+			<form class="form" >
+				<button class="btn btn-primary col-6 "><a href="{% url 'login' %}">login</a></button><br>
+				<button class="btn btn-primary" style="margin-top: 10px;"><a href="{% url 'signup' %}">signup</a></button>
+			</form>
+		</div>
+
+		<div id="div2" class="login-form col-md-4 offset-md-4" >
+			<h1 class="title">ADMIN</h1>
+
+			<form class="form">
+				<button class="btn btn-primary "><a href="{% url 'login' %}">login</a></button><br>
+				<button class="btn btn-primary" style="margin-top: 10px;"><a href="{% url 'signup' %}">signup</a></button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
 
 
 
